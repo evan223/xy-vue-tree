@@ -60,55 +60,14 @@
                                         checked: true,
                                     }
                                 ]
-                            },
-                        ]
-                    },
-                    {
-                        id: 10,
-                        name: '一级 3',
-                        children: [
-                            {
-                                id: 11,
-                                name: '二级 3-1',
-                                children: [
-                                    {
-                                        id: 12,
-                                        name: '三级 3-1-1',
-                                    },
-                                    {
-                                        id: 13,
-                                        name: '三级 3-1-2',
-                                    }
-                                ]
-                            },
-                            {
-                                id: 14,
-                                name: '二级 3-2',
-                                children: [
-                                    {
-                                        id: 15,
-                                        name: '二级 13-2-1',
-                                        checked: false,
-                                    }
-                                ]
-                            },
-                        ]
-                    },
-                    {
-                        id: 16,
-                        name: '一级 4',
-                        checked: false,
-                        children: [
-                            {
-                                id: 17,
-                                name: '一级4-1',
-                            },
-                            {
-                                id: 18,
-                                name: '一级4-2',
                             }
                         ]
                     },
+                    {
+                        id: 6,
+                        name: '一级 2',
+                        children: []
+                    }
                 ]
             }
         },
