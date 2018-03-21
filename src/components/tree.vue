@@ -1,9 +1,9 @@
 <template>
     <div class="xy-tree" @click.stop="openClose"
          ref="tree"
-         :treeDatas="treeDatas"
+         :data="data"
          :props="defaultProps">
-        <div class="tree-parent-node" v-for="item in treeDatas" :key="item.id">
+        <div class="tree-parent-node" v-for="item in data" :key="item.id">
             <div class="tree-node parent-node">
                  <span class="node-checkbox">
                     <input type="checkbox"
@@ -44,7 +44,7 @@
 //    import triIcon from './components/icons/tri-icon.vue'
     export default {
         name: 'xy-tree',
-        props: ['treeDatas', 'defaultProps'],
+        props: ['data', 'defaultProps'],
         data () {
             return {
                 selection: []
@@ -92,7 +92,7 @@
             // 获取所有checked数据
             checkedData () {
                 this.selection = [];
-                this.treeDatas.forEach(td => {
+                this.data.forEach(td => {
                     if (td.children.length > 0) {
                         td.children.forEach(tdc1 => {
                             if (tdc1.children) {

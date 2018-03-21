@@ -1,6 +1,6 @@
 <template>
     <div>
-        <tree :treeDatas="treeDatas"
+        <tree :data="treeDatas"
               :defaultProps="defaultProps"
               @checkChange="checkChange"
               @checkedData="checkedData"></tree>
